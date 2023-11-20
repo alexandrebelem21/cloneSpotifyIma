@@ -15,14 +15,19 @@
   <body>
     <navbar id="navbar">
       <div class="navbar-container">
-        <img src="./img/logo.png" alt="logoSpotify" class="logo" />
-        <ul class="navbar-items">
-          <li class="navbar-item">Premium</li>
-          <li class="navbar-item">Ajuda</li>
-          <li class="navbar-item">Baixar</li>
-          <li class="navbar-item">Inscrever-se</li>
-          <li class="navbar-item">Entrar</li>
-        </ul>
+        <div class="navbar-responsive">
+          <img src="./img/logo.png" alt="logoSpotify" class="logo" />
+          <i id="hamburguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        </div>
+        <menu id="items">
+          <ul class="navbar-items">
+            <li class="navbar-item">Premium</li>
+            <li class="navbar-item">Ajuda</li>
+            <li class="navbar-item">Baixar</li>
+            <li class="navbar-item">Inscrever-se</li>
+            <li class="navbar-item">Entrar</li>
+          </ul>
+        </menu>
       </div>
     </navbar>
 
@@ -40,11 +45,13 @@
       <div class="footer-content">
         <img src="img/logo.png" alt="logoSpotify" class="logo" />
         <ul class="footer-menu">
+          <p>Empresa</p>
           <li class="footer-menu-item">Sobre</li>
           <li class="footer-menu-item">Empregos</li>
           <li class="footer-menu-item">For the record</li>
         </ul>
         <ul class="footer-menu">
+          <p>Comunidades</p>
           <li class="footer-menu-item">Para Artistas</li>
           <li class="footer-menu-item">Desenvolvedores</li>
           <li class="footer-menu-item">Marcas</li>
@@ -52,6 +59,7 @@
           <li class="footer-menu-item">Fornecedores</li>
         </ul>
         <ul class="footer-menu">
+          <p>Links úteis</p>
           <li class="footer-menu-item">Ajuda</li>
           <li class="footer-menu-item">Player da Web</li>
           <li class="footer-menu-item">Aplicativo móvel grátis</li>
@@ -82,6 +90,7 @@
       </div>
     </footer>
 
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/b5ee3e478b.js"
       crossorigin="anonymous"
